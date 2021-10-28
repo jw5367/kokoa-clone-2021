@@ -49,3 +49,6 @@
   display: block;
   margin-bottom: 8px;
 }
+.user-component__subtitle i {
+  color: tomato;
+}
