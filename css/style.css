@@ -22,5 +22,6 @@ body {
   color: #2e363e;
 }
 .main-screen {
-  margin: 0px var(--horizon-space);
+  margin-left: var(--horizon-space);
+  margin-right: var(--horizon-space);
 }
