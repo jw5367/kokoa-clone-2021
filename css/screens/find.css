@@ -17,7 +17,7 @@
 }
 .open-chat__header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   opacity: 0.8;
   margin-bottom: 25px;
 }
@@ -61,7 +61,7 @@
   background-color: var(--gray);
 }
 .open-post__member-status {
-  color: #ffb0e0;
+  color: #04612b;
 }
 .open-post__photo img {
   width: 120px;
@@ -85,4 +85,24 @@
 }
 .open-post__heart-count span {
   margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }

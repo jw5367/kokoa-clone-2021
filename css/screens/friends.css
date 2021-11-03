@@ -1,7 +1,10 @@
+body {
+  background-color: rgba(29, 165, 29, 0.562);
+}
 .friends-display-link {
   display: block;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #fafafa77;
   padding: 15px 0px;
   margin-top: -40px;
   margin-bottom: 10px;
@@ -27,4 +30,48 @@
   justify-content: space-between;
   color: var(--gray);
   font-weight: 600;
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: green;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}
+#splash-screen__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#splash-screen i {
+  color: rgb(253, 5, 17);
+}
+#splash-screen img {
+  width: 400px;
+  height: 400px;
+}
+#splash-screen i span {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  position: absolute;
+  top: 210px;
+  right: 205px;
 }
